@@ -1,9 +1,13 @@
 package JavaEssential_7_3;
 
 public class NoCorrectShopRequestException extends Exception{
-    String message = "Немає такого магазину";
+    private String message;
+    public NoCorrectShopRequestException(String s) {
+        this.message = s;
+    }
 
-    public String getMessage(){
+    @Override
+    public String getMessage() {
         return this.message;
     }
 }
