@@ -40,7 +40,7 @@ public class Main {
             if (isCorrectStore==true){
                 System.out.println("Products available in the store "+shopRequest+" :" );
                 for (Price tmp:list) {
-                if (tmp.shopName.equals(shopRequest)){System.out.println(tmp.productName+" price : "+tmp.price);}}}
+                if (tmp.shopName.equals(shopRequest)){System.out.println(tmp.productName+" price : "+tmp.price +"UAH");}}}
 
                 if(isCorrectStore==false){throw new NoCorrectShopRequestException("Shop "+shopRequest+" not found!");}}}
 
