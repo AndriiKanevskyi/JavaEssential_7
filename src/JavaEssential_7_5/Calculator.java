@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 public  class Calculator  {
 
-    public double addition (double number1, double number2){
+    public double add(double number1, double number2){
         return number1+number2;
     }
-    public double subtraction  (double number1, double number2){
+    public double sub(double number1, double number2){
         return number1-number2;
     }
-    public double multiplication (double number1, double number2){
+    public double mul(double number1, double number2){
         return number1*number2;
     }
-    public double division  (double number1, double number2){
+    public double div(double number1, double number2){
 
         if (number2==0){throw new ArithmeticException("Деление на ноль недопустимо!");}
 
@@ -36,16 +36,16 @@ public  class Calculator  {
 
         switch (oper){
             case '+':
-                System.out.println(calculator.addition(num1,num2));
+                System.out.println(calculator.add(num1,num2));
                 break;
             case '-':
-                System.out.println(calculator.subtraction(num1,num2));
+                System.out.println(calculator.sub(num1,num2));
                 break;
             case '*':
-                System.out.println(calculator.multiplication(num1,num2));
+                System.out.println(calculator.mul(num1,num2));
                 break;
             case '/':
-                System.out.println(calculator.division(num1,num2));
+                System.out.println(calculator.div(num1,num2));
                 break;
             default:
                 System.out.println("Неправильная операция");
